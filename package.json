@@ -36,7 +36,9 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "example:server": "tsx examples/server-llm/index.ts",
+    "example:agent": "tsx examples/agent-demo/index.ts"
   },
   "peerDependencies": {
     "@coinbase/cdp-sdk": ">=1.0.0",
@@ -56,11 +58,15 @@
     "@types/node": "^22.0.0",
     "@types/supertest": "^6.0.2",
     "@x402/core": "2.27.0",
+    "@x402/evm": "2.27.0",
+    "@x402/fetch": "2.27.0",
     "eslint": "^9.0.0",
     "express": "^4.19.0",
     "supertest": "^7.0.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.6.0",
     "typescript-eslint": "^8.0.0",
+    "viem": "^2.56.9",
     "vitest": "^2.1.0"
   }
 }
