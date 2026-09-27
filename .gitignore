@@ -1,0 +1,9 @@
+node_modules/
+dist/
+debug/
+.env
+*.log
+coverage/
+*.tsbuildinfo
+ledger*.jsonl
+examples/**/ledger*.jsonl
