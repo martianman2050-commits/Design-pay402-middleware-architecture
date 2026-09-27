@@ -30,3 +30,11 @@ export {
   type LedgerRecord,
   type LedgerMeta,
 } from "./ledger.js";
+export {
+  computeStats,
+  computeStatsFromLedger,
+  formatAtomicDecimal,
+  DASHBOARD_STAT_KEYS,
+  type DashboardStats,
+  type PayerStat,
+} from "./dashboard.js";
