@@ -2,7 +2,10 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    files: ["src/**/*.ts"],
+    files: ["src/**/*.ts", "test/**/*.ts"],
+    languageOptions: {
+      parser: tseslint.parser,
+    },
     rules: {
       // Money-handling rule: token amounts must never pass through
       // Number()/parseFloat() — precision loss on atomic-unit integers is
