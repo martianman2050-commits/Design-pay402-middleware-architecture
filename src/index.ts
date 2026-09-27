@@ -1,6 +1,7 @@
 export * from "./types.js";
 export * from "./amount.js";
 export * from "./encoding.js";
+export * from "./events.js";
 export {
   NETWORKS,
   resolveConfig,
